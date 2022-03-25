@@ -356,7 +356,7 @@ namespace PrecisionGazeMouse
                     if (mode == Mode.EYEX_AND_SMARTNAV || mode == Mode.EYEX_AND_EVIACAM || mode == Mode.EVIACAM_ONLY)
                     {
                         warpPoint = limitToScreenBounds(warpPoint);
-                        if (warpPoint != finalPoint)
+                        if (warpPoint != finalPoint && PrecisionGazeMouseForm.MousePosition != finalPoint)
                         {
                             finalPoint = warpPoint;
                             updateCursorPosition(finalPoint);
